@@ -177,7 +177,7 @@ gulp.task( 'watch', function() {
 
   gulp.watch( './images/**/*', ['images']);
  
-  //gulp.watch( './**/*.php' ).on('change', browserSync.reload);
+// gulp.watch( './**/*.php' ).on('change', browserSync.reload);
    
 } );
  
