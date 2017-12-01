@@ -24,13 +24,13 @@ var config = {
 var browserSyncWatchFiles = [
     './*.min.css',
     './js/**/*.min.js',
-    './**/*.php'
+   // './**/*.php'
 ];
 
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
     watchTask: true,
-    proxy: "http://cafinity.dev/"
+    proxy: "cafinity.dev/"
 }
  
 // Default error handler

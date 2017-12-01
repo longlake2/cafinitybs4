@@ -11,12 +11,15 @@
 
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
- 
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-8">
- 
+
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-md-8">		
+
 				<?php if ( has_post_thumbnail() && is_single() ) : ?>
 					<div class="post-thumbnail">
 						<?php the_post_thumbnail('full', array('class' => 'rounded')); ?>
@@ -63,8 +66,7 @@
 				<footer class="entry-footer">
 					<?php cafinitybs4_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-		</div><!--  .col-md-8 -->
-		</div><!--  .row -->
-	</div><!--  .container -->
- 
+			</div><!-- .col-md-8-->
+		</div><!-- .content -->
+	</div><!-- .row -->
 </article><!-- #post-## -->
