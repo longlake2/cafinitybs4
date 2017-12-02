@@ -1,7 +1,6 @@
 Cafinitybs4 - Bootstrap 4 WordPress Starter Theme
 ===
-Based on Brad Williams StrapPress
-===
+Based on Brad Williams StrapPress and StanleyWP
 
 Cafinitybs4 is _s with Bootstrap 4. 
 
