@@ -6766,6 +6766,19 @@ a.text-dark:focus, a.text-dark:hover {
       max-width: 33.33333333%; } }
 
 /*--------------------------------------------------------------
+## templates
+--------------------------------------------------------------*/
+.about {
+  background-color: #e9ecef;
+  padding: 2rem 0; }
+
+.about-columns {
+  margin-top: 2rem;
+  padding: 3rem 0; }
+  .about-columns h4 {
+    margin-top: 2rem; }
+
+/*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comments-area {
@@ -6901,6 +6914,9 @@ a.text-dark:focus, a.text-dark:hover {
   color: #fff; }
 
 .blog .site-header {
+  margin-bottom: 0; }
+
+.page-template-about .site-header {
   margin-bottom: 0; }
 
 /*--------------------------------------------------------------
