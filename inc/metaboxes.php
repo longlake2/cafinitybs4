@@ -13,8 +13,8 @@ function cmb2_cafinitybs4_metaboxes() {
 	 * Initiate the metabox
 	 */
 	$cmb = new_cmb2_box( array(
-		'id'            => 'test_metabox',
-		'title'         => __( 'Test Metabox', 'cmb2' ),
+		'id'            => 'about_metabox',
+		'title'         => __( 'About Metabox', 'cmb2' ),
 		'object_types'  => array( 'page', ), // Post type
 		'show_on'       => array( 'key' => 'page-template', 'value' => 'templates/about.php' ),
 		'context'       => 'normal',
@@ -42,4 +42,30 @@ function cmb2_cafinitybs4_metaboxes() {
 
 	) );
 
+	/**
+	 * Metabox for project
+	 */
+	
+	$cmb_project = new_cmb2_box( array(
+		'id'            => 'project_metabox',
+		'title'         => __( 'Images', 'cafinitybs4' ),
+		'object_types'  => array( 'project', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Input Area for left column
+	$cmb_project->add_field( array(
+		'name'       => __( 'Images', 'cafinitybs4' ),
+		'desc'       => __( 'Upload images', 'cafinitybs4' ),
+		'id'         => $prefix . 'images',
+		'type'       => 'file_list',
+
+	) );
+
 }
+
+	
