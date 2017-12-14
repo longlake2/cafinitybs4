@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('text-center'); ?>>
-	<?php the_post_thumbnail('full', array('class' => 'mb-3')); ?>
+	<?php the_post_thumbnail('full', array('class' => 'mb-3 rounded-circle')); ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title mb-3">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -19,7 +19,7 @@
 		<?php
 			the_content();
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stanleywp' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cafinitybs4' ),
 				'after'  => '</div>',
 			) );
 		?>

@@ -10,11 +10,11 @@
  */
 
 get_header(); ?>
-<div class="about">
+<div class="banner">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main">
+				<main id="main" class="site-main text-center" role="main">
 
 					<?php
 					while ( have_posts() ) : the_post();
@@ -33,7 +33,7 @@ get_header(); ?>
 			</div><!-- #primary -->
 		</div>
 	</div>
-</div>
+</div><!--.banner-->
 
 <?php
 // Grab the metadata from the database
