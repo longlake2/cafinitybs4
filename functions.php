@@ -67,6 +67,10 @@ function cafinitybs4_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+
+	// Add theme support for custom logo.
+	add_theme_support( 'custom-logo' );
 }
 endif;
 add_action( 'after_setup_theme', 'cafinitybs4_setup' );
