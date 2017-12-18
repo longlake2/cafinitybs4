@@ -12,12 +12,16 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
- 
+	
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
- <?php echo get_avatar( get_the_author_meta( 'ID' ), 50, null, null, array( 'class' => array('mb-3', 'rounded-circle') ) ); ?>
- <?php echo get_the_author(); ?>
+				
+				<div class="author-avatar mb-3">
+					<?php echo get_avatar( get_the_author_meta( 'ID' ), 50, null, null, array( 'class' => array('rounded-circle') ) ); ?>
+					<span><?php echo get_the_author(); ?></span>
+				</div><!--  .author-avatar -->
+				
 				<?php if ( has_post_thumbnail() && is_single() ) : ?>
 					<div class="post-thumbnail">
 						<?php the_post_thumbnail('full', array('class' => 'rounded')); ?>
@@ -64,8 +68,8 @@
 				<footer class="entry-footer">
 					<?php cafinitybs4_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-		</div><!--  .col-md-8 -->
+			</div><!--  .col-md-8 -->
 		</div><!--  .row -->
 	</div><!--  .container -->
- 
+	
 </article><!-- #post-## -->
